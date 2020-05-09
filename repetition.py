@@ -53,10 +53,58 @@ print("the sum of numbers from 1 to 100 =", total)
 fruits = ["banana", "apple", "grape", "pineapple"]
 for fruit in fruits:
     print(fruit)
-    print(fruits)
-
 
 # define a range of numbers
 r1 = range(5)
 
 # print(r1[0], r1[1], r1[2], r1[3], r1[4])
+
+# while loop
+count = 0
+while count <5:
+    print(count)
+    count += 1
+    # same as count = count + 1
+
+count = 0
+while True:
+    print(count)  
+    count += 1
+
+    if count > 4:
+        break
+
+print("while loop ended")
+
+count = 0
+while count <= 5:
+    count += 1
+    if count % 2: # % gives the remainder of the division
+        continue
+
+    print (count)
+
+print("while loop ended")
+
+# can have a loop with else
+
+# print only the even numbers
+for i in range(1,10):
+    if i % 2 > 0:
+        continue
+
+    print("i =", i)
+else:
+    print("loop fully completed")
+
+print("done")
+
+for i in range(1,10):
+    if i ==5 > 0:
+        break
+
+    print("i =", i)
+else:
+    print("loop fully completed")
+
+print("done")
